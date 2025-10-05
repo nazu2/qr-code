@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QRコードARデモ</title>
   <!-- A-Frame と AR.js の読み込み -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.4.2/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  https://cdnjs.cloudflare.com/ajax/libs/aframe/1.4.2/aframe.min.js</script>
+  https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js</script>
 </head>
 <body style="margin: 0px; overflow: hidden;">
-  <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs>
     <!-- マーカー（qr-code.patt）検出エリア -->
     <a-marker type="pattern" url="./qr-code.patt">
       <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
@@ -20,3 +21,4 @@
   </a-scene>
 </body>
 </html>
+
