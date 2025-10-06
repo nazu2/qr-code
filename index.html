@@ -13,6 +13,18 @@
     <!-- マーカー（qr-code.patt）検出エリア -->
     <a-marker type="pattern" url="/pattern-qr-code.patt">
       <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const marker = document.querySelector('a-marker');
+    marker.addEventListener('markerFound', () => {
+      console.log('マーカーが検出されました');
+    });
+    marker.addEventListener('markerLost', () => {
+      console.log('マーカーが見失われました');
+    });
+  });
+</script>
+
     </a-marker>
 
     <!-- ARカメラエンティティ -->
